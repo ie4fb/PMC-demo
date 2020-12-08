@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>PMC Demo</title>
+</head>
+
+<body class="page">
+    <header class="header">
+        <p class="header__title">Test page</p>
+    </header>
+    <section class="content">
+        <div class="content__request">
+            <h1 class="content__title">Request</h1>
+            <form class="content__form form">
+                <fieldset class="form__fieldset">
+                    <input class="form__input" placeholder="phone" id="phone" value="79160000000">
+                    <input class="form__input" placeholder="currency" id="currency" value="RUB">
+                    <input class="form__input" placeholder="product_id" id="pruduct_id" value="ids_mts_bpс">
+                    <input class="form__input" placeholder="message" id="message" value="test message">
+                    <input class="form__input" placeholder="params" id="params" value='{"email":"test@local.host","some_param":"some value"}'>
+                    <input class="form__input" placeholder="payment-id" id="payment-id" value="ee400bd6-02c2-44d7-8699-acb1b5494cdb">
+                    <input class="form__input" placeholder="price" id="price" value="10000">
+                    <input class="form__input" placeholder="secret-key" id="secret-key" value="AAuJRLlDBKiJ">
+                </fieldset>
+                <button class="form__button">Send request</button>
+            </form>
+            <textarea class="content__textarea" placeholder="Request preview" id="request-preview"></textarea>
+        </div>
+        <div class="content__response">
+            <h1 class="content__title">Response</h1>
+            <textarea class="content__textarea" placeholder="Response result" id="response-input"></textarea>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer__copyright">&copy; PMC</p>
+    </footer>
+    <script src="./pages/index.js" defer></script>
+    <script src="./scripts/components/md5.js" defer></script>
+</body>
+
+</html>
